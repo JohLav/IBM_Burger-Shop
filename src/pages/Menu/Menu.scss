@@ -12,19 +12,21 @@ section#menu {
     padding: 2rem;
   }
 
-  > div {
+  > div.cards {
     display: flex;
     justify-content: space-evenly;
+
   }
 }
 
 .menuCard {
+  background-color: white;
   width: 30%;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
 
   > div {
-    background-color: $red;
+    background-color: $orange;
     color: white;
     border-radius: 20px 20px 0 0;
     display: flex;
@@ -57,7 +59,7 @@ section#menu {
     }
 
     > button {
-      background-color: $red;
+      background-color: $orange;
       color: white;
       border: none;
       padding: 1rem 2rem;
@@ -66,7 +68,7 @@ section#menu {
       cursor: pointer;
 
       &:hover {
-        background-color: $reddark;
+        background-color: $darkorange;
       }
     }
   }

@@ -13,10 +13,10 @@ section#about {
     > h1 {
       //width: 100vh;
       font: 500 3rem "Open Sans";
-      color: $redlight;
+      color: $whiteorange;
       padding: 1rem 2rem;
       text-transform: uppercase;
-      background-color: $dark;
+      background-color: $brick;
     }
 
     > article {
@@ -50,7 +50,7 @@ section#about {
         margin: auto;
 
         &:hover {
-          color: $red;
+          color: $lightorange;
           transform: scale(1.1);
         }
       }
@@ -58,8 +58,8 @@ section#about {
 
     > div {
       padding: 2rem;
-      color: white;
-      background-color: $red;
+      color: $darkgreen;
+      background-color: $whiteorange;
 
       > h2 {
         text-align: center;

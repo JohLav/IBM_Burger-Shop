@@ -1,13 +1,19 @@
 @import "../../styles/colors";
 
 .cart {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
 
   > main {
+    background-color: white;
     height: 100%;
+    width: 90vw;
     max-width: 900px;
-    margin: auto;
+    //margin: auto;
     padding: 2rem;
 
     > article {
@@ -20,20 +26,24 @@
       }
 
       > a {
-        background-color: $red;
+        background-color: $orange;
         color: white;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         text-align: center;
         margin-top: 2rem;
         float: right;
+
+        &:hover {
+          background-color: $darkorange;
+        }
       }
     }
   }
 }
 
 .cartItem {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(251, 250, 250);
   margin: 1rem;
   display: flex;
   align-items: center;
@@ -63,12 +73,12 @@
       margin: 0.25rem;
       outline: none;
       border-radius: 5px;
-      color: $red;
+      color: $orange;
 
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
         -webkit-appearance: none;
-        margin: 0%;
+        margin: 0;
       }
     }
 
@@ -76,9 +86,13 @@
       cursor: pointer;
       border: none;
       padding: 0.5rem;
-      background-color: $dark;
+      background-color: $orange;
       color: white;
       border-radius: 5px;
+
+      &:hover {
+        background-color: $darkorange;
+      }
     }
   }
 }

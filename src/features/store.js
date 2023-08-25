@@ -1,6 +1,8 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// import burgerReducer from "./burgerSlice.js";
-//
-// export const store = configureStore({
-//   reducer: burgerReducer,
-// });
+import { configureStore } from "@reduxjs/toolkit";
+import burgerSlice from "./burgerSlice.js";
+
+export const store = configureStore({
+  reducer: {
+    burgerSlice,
+  },
+});
