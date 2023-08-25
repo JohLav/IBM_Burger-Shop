@@ -1,11 +1,9 @@
 @import "colors";
 
 .orderDetails {
-  background-color: $pink;
   width: 100%;
 
   > main {
-    background-color: white;
     max-width: 900px;
     margin: auto;
     padding: 2rem;
@@ -14,7 +12,7 @@
     > h1 {
       text-transform: uppercase;
       text-align: center;
-      font: 100 3rem "Roboto";
+      font: 100 3rem "Open Sans";
       margin: 3rem;
     }
 
