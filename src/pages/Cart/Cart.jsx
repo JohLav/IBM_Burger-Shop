@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem.jsx";
-import burger1 from "../../../public/assets/burger1.png";
-import burger2 from "../../../public/assets/burger2.png";
-import burger3 from "../../../public/assets/burger3.png";
+import burger1 from "../../assets/burger1.png";
+import burger2 from "../../assets/burger2.png";
+import burger3 from "../../assets/burger3.png";
 import "./Cart.scss";
 
 export default function Cart() {

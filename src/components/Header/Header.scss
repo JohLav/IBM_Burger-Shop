@@ -1,12 +1,14 @@
 @import "../../styles/colors";
 
 nav {
+  background-color: white;
   height: 5rem;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
+  z-index: -1;
 
   > div {
     display: flex;

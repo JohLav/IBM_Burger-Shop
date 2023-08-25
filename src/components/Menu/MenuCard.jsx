@@ -11,7 +11,7 @@ export default function MenuCard({
 }) {
   return (
     <motion.div
-      className="col menuCard"
+      className="menuCard"
       initial={{
         x: "-100%",
         opacity: 0,
@@ -24,7 +24,7 @@ export default function MenuCard({
         delay,
       }}
     >
-      <div className="e"></div>
+      <div></div>
       <main>
         <img src={burgerSrc} alt={itemNum} />
         <h4>{price}€</h4>
@@ -42,7 +42,7 @@ export default function MenuCard({
               boxShadow: "0 0 10px rgba(0,0,0,0.2)",
             }}
           >
-            Ajouter au panier
+            Ajouté au panier !
           </div>
         </Popup>
         {/*    Modal */}

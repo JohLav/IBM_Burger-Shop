@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import me from "../../../public/assets/skj.jpg";
+import me from "../../assets/skj.jpg";
 import "./Founder.scss";
 
 export default function Founder() {

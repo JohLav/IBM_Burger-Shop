@@ -12,7 +12,6 @@ import OrderDetails from "./components/myOrders/OrderDetails.jsx";
 import Profile from "./components/Profile/Profile.jsx";
 import Shipping from "./pages/Shipping/Shipping.jsx";
 import "./styles/app.scss";
-import "./styles/table.scss";
 
 export default function App() {
   return (

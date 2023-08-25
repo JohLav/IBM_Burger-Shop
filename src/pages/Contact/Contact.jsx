@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import burger2 from "../../../public/assets/burger2.png";
+import burger2 from "../../assets/burger2.png";
 import Popup from "reactjs-popup";
 import "./Contact.scss";
 

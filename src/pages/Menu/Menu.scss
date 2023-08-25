@@ -1,13 +1,10 @@
 @import "../../styles/colors";
 
-#menu {
+section#menu {
   width: 100%;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, .75);
-  margin: 0;
   padding: 4rem;
-  display: grid;
-  gap: 2rem;
 
   > h1 {
     font-size: 2rem;
@@ -22,18 +19,18 @@
 }
 
 .menuCard {
-  background-color: white;
   width: 30%;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
 
-  > .banner {
+  > div {
     background-color: $red;
+    color: white;
     border-radius: 20px 20px 0 0;
     display: flex;
     align-items: center;
     padding: 2rem;
-    //height: 4rem;
+    height: 4rem;
   }
 
   > main {
@@ -75,16 +72,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  #menu > div {
-    flex-direction: column;
-  }
-
-  .menuCard {
-    width: 100%;
-    margin: 1rem 0;
-  }
-}
 @media screen and (max-width: 768px) {
   #menu > div {
     flex-direction: column;

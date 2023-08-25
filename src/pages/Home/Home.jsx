@@ -16,8 +16,8 @@ export default function Home() {
   };
   return (
     <>
-      <section className="home">
-        <div className="cover">
+      <section id="home">
+        <div>
           <motion.h1 {...options}>Burger Shop</motion.h1>
           <motion.p {...options} transition={{ delay: 0.2 }}>
             De savoureux burger.
@@ -32,9 +32,9 @@ export default function Home() {
         >
           Consulter le Menu
         </motion.a>
-        <Menu />
-        <Founder />
       </section>
+      <Menu />
+      <Founder />
     </>
   );
 }
