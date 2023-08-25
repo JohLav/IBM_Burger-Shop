@@ -1,0 +1,20 @@
+{
+  "short_name": "Vite + React",
+  "name": "Create Vite @latest Sample",
+  "icons": [
+    {
+      "src": "vite.svg",
+      "type": "image/svg",
+      "sizes": "31.88x32"
+    },
+    {
+      "src": "react.svg",
+      "type": "image/svg",
+      "sizes": "35.93x32"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
