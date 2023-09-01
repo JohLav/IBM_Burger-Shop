@@ -20,66 +20,43 @@ export default function Cart() {
 
   return (
     <section id="cart" className="container">
-      {/*<main className="container">*/}
       <div className="row">
         <div className="col col-sm cart">
           <Table />
         </div>
 
-        <div className="col col-sm order-summary">
-          <ul className="list-group">
-            <li className="list-group-item">Récapitulatif</li>
+        <ul className="list-group">
+          <li className="list-group-item">Récapitulatif</li>
 
-            <ul className="list-group-horizontal d-flex">
-              <li className="list-group-item">Sous-total</li>
-              <li className="list-group-item">{subTotal.toFixed(2)}€</li>
+          <li className="list-group-item">
+            <ul className="list-group d-flex">
+              <li className="text-left">
+                <strong>Sous-total</strong>
+              </li>
+              <li className="text-right">{subTotal.toFixed(2)}€</li>
             </ul>
-            <ul className="list-group-horizontal d-flex">
-              <li className="list-group-item">Livraison</li>
-              <li className="list-group-item">{shipping.toFixed(2)}€</li>
+            <ul className="list-group d-flex">
+              <li className="text-left">
+                <strong>Livraison</strong>
+              </li>
+              <li className="text-right">{shipping.toFixed(2)}€</li>
             </ul>
-            <ul className="list-group-horizontal d-flex">
-              <li className="list-group-item">Total</li>
-              <li className="list-group-item">
+          </li>
+          <li className="list-group-item">
+            <ul className="list-group d-flex">
+              <li className="text-left">
+                <strong>Total</strong>
+              </li>
+              <li className="text-right">
                 {subTotal === 0.0 ? "0.00" : total.toFixed(2)}€
               </li>
             </ul>
-          </ul>
-
-          {/*<ul className="list-group">*/}
-          {/*  <li className="list-group-item">Récapitulatif</li>*/}
-
-          {/*  <li className="list-group-item">*/}
-          {/*    <ul className="list-group d-flex">*/}
-          {/*      <li className="text-left">*/}
-          {/*        <strong>Sous-total</strong>*/}
-          {/*      </li>*/}
-          {/*      <li className="text-right">{subTotal.toFixed(2)}€</li>*/}
-          {/*    </ul>*/}
-          {/*    <ul className="list-group d-flex">*/}
-          {/*      <li className="text-left">*/}
-          {/*        <strong>Livraison</strong>*/}
-          {/*      </li>*/}
-          {/*      <li className="text-right">{shipping.toFixed(2)}€</li>*/}
-          {/*    </ul>*/}
-          {/*  </li>*/}
-          {/*  <li className="list-group-item">*/}
-          {/*    <ul className="list-group d-flex">*/}
-          {/*      <li className="text-left">*/}
-          {/*        <strong>Total</strong>*/}
-          {/*      </li>*/}
-          {/*      <li className="text-right">*/}
-          {/*        {subTotal === 0.0 ? "0.00" : total.toFixed(2)}€*/}
-          {/*      </li>*/}
-          {/*    </ul>*/}
-          {/*  </li>*/}
-          {/*</ul>*/}
-        </div>
-        <Link className="link" to="/checkout">
-          Commander
-        </Link>
+          </li>
+        </ul>
       </div>
-      {/*</main>*/}
+      <Link className="link" to="/checkout">
+        Commander
+      </Link>
     </section>
   );
 }
