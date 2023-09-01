@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+
+section#checkout {
+  background-color: white;
+
+  > form {
+    > a.button {
+    }
+
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    background-color: $orange;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $darkorange;
+    }
+  }
+}
+

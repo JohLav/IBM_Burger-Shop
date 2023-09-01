@@ -52,7 +52,7 @@ export default function Shipping() {
 
           <Popup
             trigger={
-              <Link className="link" to="/my-orders">
+              <Link className="link" to="/">
                 Confirmer
               </Link>
             }
