@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "picked": false,
+      "title": "Cheese Burger",
+      "price": 2.99,
+      "img": "burger1",
+      "delay": "0.1"
+    },
+    {
+      "id": 2,
+      "picked": false,
+      "title": "Burger Vegan",
+      "price": 5.99,
+      "img": "burger2",
+      "delay": "0.5"
+    },
+    {
+      "id": 3,
+      "picked": false,
+      "title": "Burger Frites",
+      "price": 9.99,
+      "img": "burger3",
+      "delay": "O.8"
+    }
+  ]
+}

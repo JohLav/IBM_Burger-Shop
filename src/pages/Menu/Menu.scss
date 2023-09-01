@@ -6,66 +6,13 @@ section#menu {
   background-color: rgba(255, 255, 255, .75);
   padding: 4rem;
 
-  > h1 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  > div.cards {
-    display: flex;
-    justify-content: space-evenly;
-
-  }
-}
-
-.menuCard {
-  background-color: white;
-  width: 30%;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
-
-  > div {
-    background-color: $orange;
-    color: white;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    height: 4rem;
-  }
-
-  > main {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    > img {
-      height: 15rem;
-      width: 100%;
-      object-fit: contain;
-    }
-
-    > h5 {
-      font-size: 1.8rem;
-    }
-
-    > p {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 1rem 0;
-    }
-
-    > button {
+  .card-footer {
+    > button.btn {
       background-color: $orange;
       color: white;
       border: none;
-      padding: 1rem 2rem;
-      width: 100%;
-      border-radius: 10px;
-      cursor: pointer;
+      padding: .8rem 2rem;
+      width: 75%;
 
       &:hover {
         background-color: $darkorange;
@@ -74,13 +21,13 @@ section#menu {
   }
 }
 
-@media screen and (max-width: 768px) {
-  #menu > div {
-    flex-direction: column;
-  }
 
-  .menuCard {
-    width: 100%;
-    margin: 1rem 0;
+@media screen and (min-width: 1200px) {
+  section#menu {
+    .card-footer {
+      > button.btn {
+        width: 65%;
+      }
+    }
   }
 }

@@ -5,7 +5,7 @@ import "./Shipping.scss";
 
 export default function Shipping() {
   return (
-    <section className="shipping">
+    <section id="shipping">
       <main>
         <h1>Détails de livraison</h1>
         <form>
@@ -53,7 +53,6 @@ export default function Shipping() {
           <Popup
             trigger={
               <Link className="link" to="/my-orders">
-                {" "}
                 Confirmer
               </Link>
             }
